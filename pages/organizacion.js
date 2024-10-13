@@ -23,24 +23,24 @@ const Organizacion = () => {
                     </div>
 
                     {/* Usando Flexbox para las columnas */}
-                    <div className="flex flex-wrap justify-center gap-10">
+                    <div className="flex flex-row justify-center gap-10">
                         {/* Columna para el director */}
-                        <div className="w-full md:w-1/3 text-center wow fadeInDown">
-                            <div className="clients-comments">
+                        <div className="w-full">
+                            <div className="flex flex-col justify-center align-center">
                                 <Image
                                     src="/responsables/RobertoVargasCuervo.jpg"
                                     alt="Roberto Vargas Cuervo"
-                                    className="rounded-full mx-auto"
+                                    className="rounded-full mx-auto border-2 border-rojo"
                                     width={150}
                                     height={150}
                                 />
-                                <h4 className="mt-4">DIRECTOR: ROBERTO VARGAS CUERVO</h4>
+                                <h4 className="mt-4 font-semibold">DIRECTOR: ROBERTO VARGAS CUERVO</h4>
                                 <h4><span>Geólogo Universidad Nacional de Colombia</span></h4>
                             </div>
                         </div>
 
                         {/* Columna para Ingrid */}
-                        <div className="w-full md:w-1/3 text-center wow fadeInDown">
+                        <div className="w-full  text-center wow fadeInDown">
                             <div className="clients-comments">
                                 <Image
                                     src="/responsables/IngridMunozQuijano.jpg"
@@ -55,7 +55,7 @@ const Organizacion = () => {
                         </div>
 
                         {/* Columna para Jorge */}
-                        <div className="w-full md:w-1/3 text-center wow fadeInDown">
+                        <div className="w-full  text-center wow fadeInDown">
                             <div className="clients-comments">
                                 <Image
                                     src="/responsables/JorgeEduardoMayorga.jpg"

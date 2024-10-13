@@ -25,13 +25,16 @@ const MetalPrices = () => {
   if (error) return <div>{error}</div>;
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-      {Object.keys(metalPrices).map(metal => (
-        <div key={metal} className="p-4 border rounded-lg shadow-lg bg-[#FEFCF2]">
-          <h2 className="text-lg font-semibold">{metal}</h2>
-          <p className="text-gray-500">Price: {metalPrices[metal].toFixed(2)} COP</p>
-        </div>
-      ))}
+    <div className="container mx-auto px-4 w-full bg-[#FEFCF2] text-black py-8">
+      <h2 className="container mx-auto text-3xl tracking-tighter uppercase font-semibold mb-4">Indicadores Economicos</h2>
+      <div className="container mx-auto grid md:grid-cols-3 gap-4">
+        {Object.keys(metalPrices).map(metal => (
+          <div key={metal} className="p-4 border rounded-lg shadow-lg">
+            <h2 className="text-lg font-semibold">{metal}</h2>
+            <p className="text-gray-500">Price: {metalPrices[metal].toFixed(2)} COP</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

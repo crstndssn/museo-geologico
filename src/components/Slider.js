@@ -8,8 +8,8 @@ import 'swiper/css/pagination';
 const Slider = ({ images }) => {
   return (
     <Swiper
-      slidesPerView={1.5}
-      spaceBetween={10}
+      slidesPerView={1}
+      spaceBetween={0}
       freeMode={true}
       pagination={{
         clickable: true,
@@ -19,7 +19,7 @@ const Slider = ({ images }) => {
       }}
       loop={true}
       autoplay={{
-        delay: 3000,
+        delay: 2000,
         disableOnInteraction: false,
       }}
       breakpoints={{
@@ -36,9 +36,9 @@ const Slider = ({ images }) => {
             unoptimized
             src={image}
             alt={`Slider Image ${index + 1}`}
-            className="w-full"
+            className="w-full h-auto"
             width={1000}
-            height={1000}
+            height={0}
           />
         </SwiperSlide>
       ))}

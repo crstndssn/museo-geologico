@@ -1,13 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+} */
+
+h1, h2, h3, h4, h5 {
+  font-family: "Josefin Sans", sans-serif;
+  margin: auto;
 }
 
-@media (prefers-color-scheme: dark) {
+p, a, link, span, ul, li {
+  font-family: "Onest", sans-serif;
+}
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
@@ -24,4 +36,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
