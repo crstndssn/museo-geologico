@@ -26,9 +26,9 @@ const Nav = () => {
                 <h1 className="text-xl md:text-5xl text-center py-5 md:py-10">MUSEO GEOLOGICO Y DEL PETROLEO000</h1>
             </div>
 
-            <nav className="flex justify-between items-center md:py-0 container mx-auto  md:bg-[#8F141B] z-10 px-0 border-b-2 border-[#8F141B] w-full">
+            <nav className="flex justify-between items-center md:py-0 container mx-auto md:bg-[#8F141B] z-10 md:px-0 px-4 border-b-2 border-[#8F141B] w-full">
 
-                <div className="w-3/4 md:w-1/4 bg-[#8F141B]">
+                <div className="w-3/4 md:w-1/4 lg:w-1/4 bg-[#8F141B]">
                     <div className="flex justify-start py-5 md:py-5">
                         <Image
                             src="/museo-logo.png"  // Cambia esto por la ruta de tu logo
@@ -41,7 +41,7 @@ const Nav = () => {
                 </div>
 
                 {/* Mobile Menu Toggle */}
-                <div className="w-1/4 md:hidden z-20 flex justify-end">
+                <div className="w-1/4 lg:hidden z-20 flex justify-end">
                     <button onClick={() => setIsOpen(!isOpen)} className="text-[#FEFCF2] hover:text-[#FEFCF2] focus:outline-none focus:text-[#FEFCF2]">
                         {isOpen ? (
                             <svg className="w-10 h-10 text-white mt-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M6 18L18 6M6 6l12 12"></path></svg>
@@ -52,7 +52,7 @@ const Nav = () => {
                 </div>
 
                 {/* Desktop Menu */}
-                <div className="hidden w-3/5 md:flex md:items-center md:space-x-10 md:text-lg md:font-medium md:border-b md:border-[#8F141B] md:bg-[#8F141B] z-10">
+                <div className="hidden md:w-[60%] lg:w-[80%] lg:flex md:items-center md:space-x-10 md:text-lg md:font-medium md:border-b md:border-[#8F141B] md:bg-[#8F141B] z-10">
                     <ul className="hidden md:flex space-x-6 text-[#FEFCF2] w-full justify-around">
                         <li className={`group relative py-1 px-3 border-2 border-[#8F141B] hover:border-2 hover:border-[#FEFCF2] rounded-full ${isActive('/') ? 'border-[#FEFCF2] bg-[#FEFCF2] text-[#8F141B] border-2 rounded-full' : ''}`}>
                             <Link href="/">Home</Link>
@@ -101,47 +101,25 @@ const Nav = () => {
                 </div>
 
                 {/* Mobile Menu */}
-                <div className={`${isOpen ? 'flex overflow-hidden' : 'hidden overflow-auto'} flex-col items-start justify-center absolute bg-[#8F141B] shadow-md w-full h-screen top-0 left-0 transition-all duration-500 ease-in-out md:hidden z-10`}>
-                    <ul className="md:hidden bg-gray-800 text-white space-y-2 p-4">
-                        <li className={`${isActive('/historia') ? 'border-[#8F141B] border-2 rounded-full p-2' : ''}`}>
-                            <span className="block">El Museo</span>
-                            <ul className="ml-4 mt-2 space-y-2">
-                                <li>
-                                    <Link href="/historia" className="block">Reseña Historia</Link>
-                                </li>
-                                <li>
-                                    <Link href="/historia" className="block">Misión</Link>
-                                </li>
-                                <li>
-                                    <Link href="/historia" className="block">Visión</Link>
-                                </li>
-                                <li>
-                                    <Link href="/historia" className="block">Objetivos</Link>
-                                </li>
-                            </ul>
+                <div className={`${isOpen ? 'flex overflow-hidden' : 'hidden overflow-auto'} flex-col items-start justify-center absolute bg-[#8F141B] shadow-md w-full h-screen top-0 left-0 transition-all duration-500 ease-in-out lg:hidden z-10`}>
+                <ul className="md:hidden flex flex-col gap-3 p-4 space-x-6 text-[#FEFCF2] text-2xl w-full justify-around">
+                        <li className={`w-fit group relative py-1 px-3 border-2 border-[#8F141B] hover:border-2 hover:border-[#FEFCF2] rounded-full m-0 ${isActive('/') ? 'border-[#FEFCF2] bg-[#FEFCF2] text-[#8F141B] border-2 rounded-full' : ''}`}>
+                            <Link href="/" className='w-full'>Home</Link>
                         </li>
-                        <li className={`${isActive('/distribucion') ? 'border-[#8F141B] border-2 rounded-full p-2' : ''}`}>
-                            <span className="block">Distribución</span>
-                            <ul className="ml-4 mt-2 space-y-2">
-                                <li>
-                                    <Link href="/distribucion" className="block">Economía</Link>
-                                </li>
-                                <li>
-                                    <Link href="/distribucion" className="block">Historia</Link>
-                                </li>
-                                <li>
-                                    <Link href="/distribucion" className="block">Petróleo</Link>
-                                </li>
-                            </ul>
+                        <li className={`w-fit m-0 group relative py-1 px-3 border-2 border-[#8F141B] hover:border-2 hover:border-[#FEFCF2] rounded-full ${isActive('/historia') ? 'border-[#FEFCF2] bg-[#FEFCF2] text-[#8F141B] border-2 rounded-full' : ''}`}>
+                            <Link href="/historia">El Museo</Link>
                         </li>
-                        <li className={`${isActive('/red') ? 'border-[#8F141B] border-2 rounded-full p-2' : ''}`}>
-                            <Link href="/red" className="block">Red</Link>
+                        <li className={`w-fit group relative py-1 px-3 border-2 border-[#8F141B] hover:border-2 hover:border-[#FEFCF2] rounded-full ${isActive('/distribucion') ? 'border-[#FEFCF2] bg-[#FEFCF2] text-[#8F141B] border-2 rounded-full' : ''}`}>
+                            <Link href="/distribucion">Distribución</Link>
                         </li>
-                        <li className={`${isActive('/organizacion') ? 'border-[#8F141B] border-2 rounded-full p-2' : ''}`}>
-                            <Link href="/organizacion" className="block">Organización</Link>
+                        <li className={`w-fit py-1 px-3 border-2 border-[#8F141B] hover:border-2 hover:border-[#FEFCF2] rounded-full ${isActive('/red') ? 'border-[#FEFCF2] bg-[#FEFCF2] text-[#8F141B] border-2 rounded-full' : ''}`}>
+                            <Link href="/red" className="">Red</Link>
                         </li>
-                        <li className={`${isActive('/contacto') ? 'border-[#8F141B] border-2 rounded-full p-2' : ''}`}>
-                            <Link href="/contacto" className="block">Contacto</Link>
+                        <li className={`w-fit py-1 px-3 border-2 border-[#8F141B] hover:border-2 hover:border-[#FEFCF2] rounded-full ${isActive('/organizacion') ? 'border-[#FEFCF2] bg-[#FEFCF2] text-[#8F141B] border-2 rounded-full' : ''}`}>
+                            <Link href="/organizacion" className="">Organización</Link>
+                        </li>
+                        <li className={`w-fit py-1 px-3 border-2 border-[#8F141B] hover:border-2 hover:border-[#FEFCF2] rounded-full ${isActive('/contacto') ? 'border-[#FEFCF2] bg-[#FEFCF2] text-[#8F141B] border-2 rounded-full' : ''}`}>
+                            <Link href="/contacto" className="">Contacto</Link>
                         </li>
                     </ul>
                 </div>

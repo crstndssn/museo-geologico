@@ -10,7 +10,7 @@ const Historia = () => {
     return (
         <>
             <Nav />
-            <div id="about-us" className="py-7 bg-amarillo text-black">
+            <div id="about-us" className="py-7 px-4 md:px-0 bg-amarillo text-black">
                 <div  id='reseña' className="mt-6">
                     {/* Historia */}
                     <div className="container mx-auto flex flex-col-reverse md:flex-row-reverse gap-12">
@@ -34,11 +34,11 @@ const Historia = () => {
                         </div>
                     </div>
 
-                    <div id='mision' className="bg-rojo">
+                    <div id='mision' className="md:bg-rojo">
 
-                        <div className="container mx-auto flex flex-col md:flex-row gap-10 py-10">
+                        <div className="container mx-auto flex flex-col md:flex-row gap-10 md:py-10 pt-10">
                             {/* Misión */}
-                            <div className="md:w-1/2 flex border-2 border-amarillo rounded-xl">
+                            <div className="bg-rojo md:bg-transparent md:w-1/2 flex border-2 border-amarillo rounded-xl">
                                 <div className="w-full py-6 wow fadeInDown">
                                     <div className="flex flex-col items-center p-4 rounded-sm my-3">
                                         <h2 className="text-4xl text-amarillo font-semibold mb-2">Misión</h2>
@@ -50,7 +50,7 @@ const Historia = () => {
                             </div>
 
                             {/* Visión */}
-                            <div className="md:w-1/2 flex border-2 border-amarillo rounded-xl">
+                            <div className="bg-rojo md:bg-transparent md:w-1/2 flex border-2 border-amarillo rounded-xl">
                                 <div className="w-full py-6 wow fadeInDown">
                                     <div className="flex flex-col items-center p-4 rounded-sm my-3">
                                         <h2 className="text-4xl text-amarillo font-semibold mb-2">Visión</h2>

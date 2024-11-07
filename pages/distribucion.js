@@ -12,12 +12,12 @@ const Distribucion = () => {
             <Nav />
             <section id="about-us" className="py-12 bg-amarillo text-black">
                 <div className="container mx-auto">
-                    <div className="text-center mb-12 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div className="text-center mb-5 mb:mb-12 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <h2 className="text-4xl font-semibold">Distribución</h2>
                     </div>
 
                     {/* Sección Geología económica */}
-                    <div className="flex flex-wrap mb-12">
+                    <div className="flex flex-wrap mb-5 md:mb-12">
                         <div className="w-full md:w-1/2 p-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                             <h2 className="text-3xl font-semibold text-center mb-4">Geología económica</h2>
                             <p className="text-justify text-lg">
@@ -30,7 +30,7 @@ const Distribucion = () => {
                     </div>
 
                     {/* Sección Geología histórica */}
-                    <div className="flex flex-wrap mb-12">
+                    <div className="flex flex-wrap mb-5 md:mb-12">
                         <div className="w-full md:w-1/2 p-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                             <h2 className="text-3xl font-semibold text-center mb-4">Geología histórica</h2>
                             <p className="text-justify text-lg">

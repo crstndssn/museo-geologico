@@ -24,7 +24,7 @@ const Red = () => {
             <section id="red" className="py-10 text-black container mx-auto">
 
 
-                <div className="flex flex-wrap mt-10">
+                <div className="flex flex-wrap mt-0 md:mt-10">
                     {/* Columna izquierda */}
                     <div className="w-full md:w-1/2 px-4 mb-10 md:mb-0 wow fadeInDown text-center">
                         <div className="container mx-auto text-center">

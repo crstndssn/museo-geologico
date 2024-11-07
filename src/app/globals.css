@@ -11,7 +11,7 @@
 } */
 
 h1, h2, h3, h4, h5 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Onest", sans-serif;
   margin: auto;
 }
 
@@ -37,3 +37,7 @@ body {
     text-wrap: balance;
   }
 } */
+
+li {
+  margin: 0 !important;
+}

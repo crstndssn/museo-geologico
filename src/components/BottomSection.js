@@ -5,19 +5,16 @@ const BottomSection = () => {
   return (
     <section id="bottom" className="py-8 bg-[#FEFCF2] text-black">
       <div className="container mx-auto">
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap flex-col lg:flex-row ">
 
           {/* Noticias */}
-          <div className="w-full md:w-2/3 p-4" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <div className="w-full lg:w-2/3 p-4" data-wow-duration="1000ms" data-wow-delay="600ms">
 
             <h2 className="text-4xl font-semibold mb-6">Horario</h2>
             <div id="main-slider" className="carousel slide" data-ride="carousel">
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <Image src="/noticias/horario.png" alt="Noticia 1" width={600} height={300} className="rounded-lg" />
-                </div>
-                <div className="carousel-item">
-                  <Image src="/slider/2.jpg" alt="Noticia 2" width={600} height={300} className="rounded-lg" />
+                  <Image src="/noticias/horario.svg" alt="Noticia 1" width={1000} height={300} />
                 </div>
               </div>
             </div>
@@ -25,7 +22,7 @@ const BottomSection = () => {
 
 
           {/* Documentos */}
-          <div className="w-full md:w-1/3 p-4" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <div className="w-full lg:w-1/3 p-4" data-wow-duration="1000ms" data-wow-delay="600ms">
             <div>
               <i className="fa fa-folder-open text-2xl mb-4"></i>
               <h2 className="text-xl font-semibold mb-4">Documentos</h2>
@@ -39,7 +36,7 @@ const BottomSection = () => {
 
               <div className="mb-4 border-2 border-black p-4 rounded-md">
                 <a className="flex" href="/documents/cartilla_museos.pdf" download="cartilla_museos.pdf">
-                  <Image src="/download.png" alt="Descargar Cartilla" width={74} height={55} />
+                  <Image src="/download.png" className='w-12 h-auto' alt="Descargar Cartilla" width={48} height={48} />
                   <h4>Descargar Representantes del museo</h4>
                 </a>
               </div>
